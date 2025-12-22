@@ -64,16 +64,6 @@ This project focuses on:
 
 ---
 
-## 🛠️ Tools & Technologies
-
-* Python
-* Jupyter Notebook
-* pandas
-* numpy
-* matplotlib / seaborn (for visualization)
-
----
-
 ## 📁 Project Structure
 
 ```

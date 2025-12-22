@@ -1,47 +1,54 @@
-# Customer Churn Analysis (Telecom)
+# Customer Churn Analysis - Telecom Company
 
 ## 📌 Project Overview
-
-Customer churn is a critical problem in the telecommunications industry, as acquiring new customers is significantly more expensive than retaining existing ones. This project focuses on analyzing customer-level data from a telecom company to understand patterns and factors that contribute to customer churn.
-
-The goal of this analysis is to gain insights that can help the company design better customer retention strategies.
-
----
+Customer churn is a major challenge in the telecommunication industry, where retaining existing customers is more cost-effective than acquiring new ones.  
+This project aims to analyze customer behavior and identify key factors that contribute to customer churn using exploratory data analysis (EDA).
 
 ## 🎯 Business Problem
+The company wants to understand:
+- What factors are associated with customer churn?
+- Which customers are more likely to churn?
+- What actionable insights can help reduce churn?
 
-The company wants to:
+## 📊 Dataset
+- Source: Kaggle – Telecom Customer Churn Dataset
+- Total records: 3,333 customers
+- Target variable: `Churn` (1 = churn, 0 = not churn)
 
-* Understand **why customers leave (churn)** or switch to another provider
-* Identify **which customers are more likely to churn**
-* Support decision-making for **customer retention strategies**, such as targeted promotions, discounts, or service improvements
+## 🔍 Analysis Approach
+The analysis focuses on:
+- Data understanding & cleaning
+- Exploratory Data Analysis (EDA)
+- Customer behavior analysis related to churn
+- Business-driven insights and recommendations
 
----
+Key variables explored:
+- Customer Service Calls
+- Data Plan subscription
+- Monthly Charges
+- Overage Fees
 
-## 📊 Dataset Information
+## 💡 Key Insights
+- Customers who contacted customer service more frequently showed a significantly higher churn rate.
+- Customers without a data plan had nearly double the churn rate compared to those with a data plan.
+- Financial factors such as monthly charges showed weak linear correlation with churn.
+- Service-related factors (customer service calls) were more influential than cost-related factors.
 
-* **Source**: Kaggle – Telecom Customer Churn Dataset
-* **Rows**: 3,333 customers
-* **Columns**: 11 features
-* **Target Variable**: `churn`
+## 🧠 Business Interpretation
+The results suggest that churn is more strongly driven by customer dissatisfaction with service rather than pricing.  
+Customers are willing to pay higher fees as long as the service quality meets expectations.
 
-The dataset contains customer-level information related to:
+## 📈 Business Recommendations
+- Improve customer service quality and reduce unresolved issues.
+- Identify customers with frequent customer service calls as high-risk churn segments.
+- Encourage data plan adoption to increase customer retention.
+- Proactively engage high-risk customers before they decide to leave.
 
-* Call usage
-* Customer service interactions
-* Subscription plans (e.g., data plan)
-* Churn status
-
----
-
-## 🔍 Initial Data Understanding
-
-Key findings from early exploration:
-
-* No missing values were found in the dataset
-* Most customers contacted customer service **1–2 times**, but a few contacted up to **9 times**
-* Only **27% of customers** subscribed to a data plan, indicating that the dataset reflects an older telecom usage pattern
-* The overall churn rate is **14.49%**, which means approximately 1 in 7 customers churned
+## 🛠 Tools & Technologies
+- Python
+- Pandas, NumPy
+- Matplotlib, Seaborn
+- Jupyter Notebook
 
 ---
 
@@ -88,12 +95,9 @@ customer-churn-analysis/
    ```bash
    git clone https://github.com/your-username/customer-churn-analysis.git
    ```
-2. Navigate to the project directory
-3. Open the notebook:
-
-   ```bash
-   jupyter notebook customerChurnAnalysis.ipynb
-   ```
+2. Install required Python libraries
+3. Open `customerChurnAnalysis.ipynb`
+4. Run the notebook sequentially
 
 ---
 
